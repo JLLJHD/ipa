@@ -19,7 +19,7 @@
 				<key>bundle-identifier</key>
 				<string>guibai.youende</string>
 				<key>bundle-version</key>
-				<string>1.0</string>
+				<string>1</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>platform-identifier</key>

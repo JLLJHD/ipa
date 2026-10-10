@@ -1,22 +1,24 @@
-# 优恩德 iOS IPA
+# 优恩德 iOS 安装
 
-在 iPhone 的 Safari 中点击下面的安装链接：
+在 iPhone 的 Safari 中打开 [优恩德安装页面](https://jlljhd.github.io/ipa/)，点击「安装优恩德」。需要 iOS 18.6 或更高版本。
 
-[安装优恩德](itms-services://?action=download-manifest&url=https%3A%2F%2Fraw.githubusercontent.com%2FJLLJHD%2Fipa%2Fmain%2Fmanifest.plist)
+- [安装清单](https://raw.githubusercontent.com/JLLJHD/ipa/main/manifest.plist)
+- [下载 IPA](https://raw.githubusercontent.com/JLLJHD/ipa/main/youende-enterprise-1.0.ipa)
+- Bundle ID：`guibai.youende`
+- 版本：`1.0`（Build `1`）
+- SHA-256：`a0af934e9ced541a7db45cc78eb4f17815ef929b188f71eee596927bd3d4ffca`
 
-如果链接未自动打开，也可以复制下面的地址到 Safari：
+Safari 安装协议地址：
 
 ```text
 itms-services://?action=download-manifest&url=https%3A%2F%2Fraw.githubusercontent.com%2FJLLJHD%2Fipa%2Fmain%2Fmanifest.plist
 ```
 
-安装清单：[manifest.plist](./manifest.plist) · 安装包：[youende-enterprise-1.0.ipa](./youende-enterprise-1.0.ipa)
+网站通过 `gh-pages` 分支发布。更新后同步发布：
 
-应用信息：
+```sh
+git push origin main
+git push origin main:gh-pages
+```
 
-- 名称：优恩德
-- Bundle ID：`guibai.youende`
-- 版本：`1.0`
-- IPA SHA-256：`a0af934e9ced541a7db45cc78eb4f17815ef929b188f71eee596927bd3d4ffca`
-
-该 IPA 需要使用与签名匹配的企业分发或设备安装方式。若 iOS 首次安装后提示不受信任，请在“设置”中信任对应开发者证书。
+IPA 保留上传者提供的原始签名；文件托管成功不代表真机签名验证通过。如果提示开发者不受信任，按 iOS 的指引在「设置 → 通用 → VPN 与设备管理」中验证对应开发者；如提示无法验证或完整性错误，应检查签名、证书和描述文件。
